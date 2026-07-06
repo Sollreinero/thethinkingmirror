@@ -88,8 +88,8 @@ a.button{
 }
 
 .publisher{
-    text-align:center;
-    margin-top:45px;
+  text-align:center;
+  margin-top:45px;
 }
 
 .publisher .label{
@@ -97,12 +97,24 @@ a.button{
   letter-spacing:.16em;
   font-size:13px;
   opacity:.9;
-  margin-bottom:18px;
+  margin-bottom:2px;
 }
 
-.publisher img{
+.press-line{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.press-icon{
+  width:40px;
+  height:auto;
+}
+
+.press-letters{
   width:450px;
-  max-width:100%;
+  max-width:85%;
   opacity:1;
 }
 
@@ -159,10 +171,14 @@ footer{
         <a class="button gold" href="https://www.linkedin.com/in/authormikebarlow/">Contact Mike Barlow</a>
       </div>
 
-      <section class="publisher">
-        <p class="label">Published by</p>
-        <img src="letters.png" alt="University of Bridgeport Press">
-      </section>
+<section class="publisher">
+  <p class="label">Published by</p>
+
+  <div class="press-line">
+    <img src="logo.png" alt="" class="press-icon">
+    <img src="letters.png" alt="University of Bridgeport Press" class="press-letters">
+  </div>
+</section>
 
     </div>
   </div>
