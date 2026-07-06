@@ -10,7 +10,7 @@
 
 body{
   margin:0;
-  font-family:Georgia,"Times New Roman",serif;
+  font-family:Arial, Helvetica, sans-serif;
   color:white;
   background:linear-gradient(135deg,#5d5fbb,#7066c9,#231943);
 }
@@ -42,28 +42,25 @@ main{
   flex:1;
 }
 
-.small{
+.headline{
   text-transform:uppercase;
-  letter-spacing:.18em;
-  font-size:13px;
-  opacity:.85;
+  letter-spacing:.16em;
+  font-size:14px;
+  opacity:.9;
+  margin-bottom:18px;
 }
 
 h1{
+  font-family:Georgia,"Times New Roman",serif;
   font-size:72px;
   line-height:.92;
-  margin:18px 0;
+  margin:0 0 24px;
 }
 
-.subtitle{
+.new-book{
   font-size:24px;
-  margin:0 0 35px;
-}
-
-.text{
-  font-size:21px;
-  line-height:1.7;
-  max-width:650px;
+  margin:0;
+  opacity:.95;
 }
 
 .buttons{
@@ -87,23 +84,34 @@ a.button{
 
 .outline{
   color:white;
-  border:1px solid rgba(255,255,255,.65);
+  border:1px solid rgba(255,255,255,.75);
 }
 
 .publisher{
   text-align:center;
-  padding:0 24px 60px;
+  padding:0 24px 70px;
+}
+
+.publisher .label{
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:13px;
+  opacity:.9;
+  margin-bottom:18px;
 }
 
 .publisher img{
-  width:340px;
+  width:450px;
   max-width:100%;
+  opacity:1;
 }
 
 footer{
   text-align:center;
   padding:26px;
   border-top:1px solid rgba(255,255,255,.18);
+  font-size:14px;
+  opacity:.85;
 }
 
 @media(max-width:800px){
@@ -117,12 +125,8 @@ footer{
     font-size:48px;
   }
 
-  .subtitle{
+  .new-book{
     font-size:20px;
-  }
-
-  .text{
-    font-size:18px;
   }
 
   a.button{
@@ -143,33 +147,28 @@ footer{
     </div>
 
     <div class="content">
-      <p class="small">Mike Barlow</p>
+      <p class="headline">Human Perspectives on Artificial Intelligence</p>
 
       <h1>The Thinking Mirror</h1>
 
-      <p class="subtitle">Human Perspectives on Artificial Intelligence</p>
-
-      <div class="text">
-        <p><strong>Welcome to <em>The Thinking Mirror</em></strong></p>
-        <p>The Thinking Mirror is the title of Mike Barlow's recent book and the name of his Substack.</p>
-      </div>
+      <p class="new-book">A New Book by Mike Barlow</p>
 
       <div class="buttons">
-        <a class="button gold" href="https://www.amazon.com/dp/B0H6T6QKY2" target="_blank">Buy The Thinking Mirror Book</a>
-        <a class="button outline" href="#">Subscribe to The Thinking Mirror Substack</a>
-        <a class="button outline" href="#">Contact Mike Barlow</a>
+        <a class="button gold" href="https://www.amazon.com/dp/B0H6T6QKY2" target="_blank">Buy The Thinking Mirror</a>
+        <a class="button gold" href="#">Visit The Thinking Mirror Substack</a>
+        <a class="button gold" href="https://www.linkedin.com/in/authormikebarlow/">Contact Mike Barlow</a>
       </div>
     </div>
   </div>
 </main>
 
 <section class="publisher">
-  <p class="small">Published by</p>
+  <p class="label">Published by</p>
   <img src="letters.png" alt="University of Bridgeport Press">
 </section>
 
 <footer>
-  The Thinking Mirror • © Mike Barlow
+© Mike Barlow
 </footer>
 
 </body>
