@@ -37,6 +37,25 @@ main{
   border-radius:8px;
   box-shadow:0 30px 70px rgba(0,0,0,.45);
 }
+.cover-container{
+  text-align:center;
+}
+
+.cover-credit{
+  margin-top:10px;
+  font-size:13px;
+  color:rgba(255,255,255,.75);
+}
+
+.cover-credit a{
+  color:inherit;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+
+.cover-credit a:hover{
+  color:white;
+}
 
 .content{
   flex:1;
@@ -178,9 +197,16 @@ footer{
 
 <main>
   <div class="wrap">
-    <div>
-      <img src="cover.jpg" alt="The Thinking Mirror book cover" class="cover">
-    </div>
+<div class="cover-container">
+  <img src="cover.jpg" alt="The Thinking Mirror book cover" class="cover">
+
+  <p class="cover-credit">
+    Cover design by
+    <a href="https://www.chasmartin.com/" target="_blank" rel="noopener noreferrer">
+      Chas Martin
+    </a>
+  </p>
+</div>
 
     <div class="content">
       <p class="headline">Human Perspectives on Artificial Intelligence</p>
